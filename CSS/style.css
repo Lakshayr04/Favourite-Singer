@@ -1,0 +1,218 @@
+/***********************
+Name: Lakshay Rajput
+Student Number: 0826016 
+Assignment Number: 10
+************************/
+
+
+/******
+head
+image
+footer
+*******/
+
+
+/* Head */
+body{
+    background-image: url(../images/sidhubg.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+} 
+
+
+aside {
+  margin-top: 6em;
+  display: flex;
+}
+aside ul {
+  list-style: disc;
+  padding: 0;
+  width: 600px;
+  margin-top: 4em;
+}
+aside li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+aside div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  width: 400px;
+}
+
+article{
+  width: 50%;
+  margin: 0 2em 0 42em;
+}
+
+
+figure {
+  margin-bottom: 30px;
+  position: relative;
+}
+figure img {
+  width: 340px;
+   height: auto;
+  filter: sepia(100%); 
+   transition: all 0.5s ease-in-out; 
+  margin: 1em 0;
+}
+aside figure:hover img {
+  transform: scale(1.25);
+  filter: sepia(0%);  
+}
+
+
+
+
+ li:hover{
+  filter: sepia(1);
+  z-index: 90;
+}
+
+ figure:nth-of-type(1) img {
+  transform: translate(-13px, 15px) rotate(13deg);
+}   
+/* figure:nth-of-type(2) img {
+  transform: translate(10px, 50px) rotate(-20deg);
+}
+figure:nth-of-type(3) img {
+  transform: translate(-25px, 10px) rotate(60deg);
+}
+figure:nth-of-type(4) img {
+  transform: translate(80px, 55px) rotate(-35deg);
+}
+figure:nth-of-type(5) img {
+  transform: translate(-5px, 30px) rotate(-35deg);
+} */
+
+img{ 
+  box-shadow: 2px 6px 12px rgba(202, 52, 52, 0.5);
+  transition: 0.20s;
+}
+
+li img:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5), 0px 0px 9px rgba(0,0,0,0.7);
+} 
+
+
+
+figcaption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+aside figure:hover figcaption {
+  display: none;
+}
+
+h2{
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+}
+
+h1{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: rgb(255, 0, 0);
+  margin-left: 37%;
+}
+
+
+footer{
+  clear: both;
+  background-color: rgb(40, 30, 30);
+  color: rgba(10, 5, 5, 0.827);
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: rgb(0, 255, 0);
+  border: 2px solid;
+  background-color: burlywood;
+  text-align: center;
+}
+
+
+
+  @media screen and (max-width: 640px) {
+   
+    
+  article{
+    width: 100%;
+    margin: 0;
+  }
+  h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: right;
+    margin: .5em 0;
+    line-height: 1em;
+  }
+
+  aside {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+
+  aside ul{
+    width: 100%;
+    margin: 0 0 0 2em;
+  }
+
+  aside div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  figure img{
+    width: 100%;
+    width: 300px;
+  }
+  figcaption{
+    width: 90.7%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
